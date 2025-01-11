@@ -1,12 +1,3 @@
-// // Copyright (c) 2024, Lucky and contributors
-// // For license information, please see license.txt
-
-// frappe.query_reports["Custom Total Stock Summary"] = {
-// 	"filters": [
-
-// 	]
-// };
-
 frappe.query_reports["Custom Total Stock Summary"] = {
     "filters": [
         {
@@ -16,13 +7,13 @@ frappe.query_reports["Custom Total Stock Summary"] = {
             "options": "Project"
         },
         {
-            "fieldname": "project_start_date",
-            "label": __("Project Start Date"),
+            "fieldname": "from_date",
+            "label": __("From Date"),
             "fieldtype": "Date"
         },
         {
-            "fieldname": "project_end_date",
-            "label": __("Project End Date"),
+            "fieldname": "to_date",
+            "label": __("To Date"),
             "fieldtype": "Date"
         },
         {
@@ -54,6 +45,13 @@ frappe.query_reports["Custom Total Stock Summary"] = {
             "label": __("Project Name"),
             "fieldtype": "Link",
             "options": "Project"
-        }
+        },
+        {
+            fieldname: "show_transit_warehouses",
+            label: __("Show Transit Warehouses Only"),
+            fieldtype: "Check",
+            default: 0,
+        },
     ]
 };
+
