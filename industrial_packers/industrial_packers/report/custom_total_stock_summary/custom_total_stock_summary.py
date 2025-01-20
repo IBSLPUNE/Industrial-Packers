@@ -22,6 +22,7 @@ def get_columns():
         {"label": _("Target Warehouse"), "fieldname": "target_warehouse", "fieldtype": "Link", "options": "Warehouse", "width": 150},
         {"label": _("Posting Date"), "fieldname": "posting_date", "fieldtype": "Date", "width": 100},
         {"label": _("Stock Entry Type"), "fieldname": "stock_entry_type", "fieldtype": "Data", "width": 120},
+        {"label": _("ID"), "fieldname": "name", "fieldtype": "Link", "options": "Stock Entry","width": 120},
         {"label": _("Company"), "fieldname": "company", "fieldtype": "Link", "options": "Company", "width": 150},
         {"label": _("Project"), "fieldname": "project", "fieldtype": "Link", "options": "Project", "width": 150},
     ]
@@ -39,6 +40,7 @@ def get_data(filters):
             se.posting_date AS posting_date,
             se.stock_entry_type AS stock_entry_type,
             se.company AS company,
+            se.name,
             se.project AS project
         FROM
             `tabStock Entry` se
