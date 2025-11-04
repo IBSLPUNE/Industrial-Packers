@@ -1,5 +1,5 @@
 {
- "add_total_row": 0,
+ "add_total_row": 1,
  "add_translate_data": 0,
  "columns": [],
  "creation": "2025-10-16 14:05:40.053934",
@@ -11,7 +11,7 @@
  "is_standard": "Yes",
  "letter_head": "Industrial Packers",
  "letterhead": null,
- "modified": "2025-10-16 14:06:46.963234",
+ "modified": "2025-10-16 15:32:59.397564",
  "modified_by": "Administrator",
  "module": "Industrial Packers",
  "name": "Project dashboard New",
